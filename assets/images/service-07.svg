@@ -1,24 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
-    <defs>
-        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#0B1F3A"/>
-            <stop offset="100%" stop-color="#1769C2"/>
-        </linearGradient>
-    </defs>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071E36"/>
+      <stop offset="62%" stop-color="#0B2D50"/>
+      <stop offset="100%" stop-color="#0D3D6B"/>
+    </linearGradient>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M 46 0 L 0 0 0 46" fill="none" stroke="#7ABAFF" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  <circle cx="88%" cy="16%" r="26%" fill="none" stroke="#7ABAFF" stroke-opacity="0.10" stroke-width="2"/>
+  <circle cx="88%" cy="16%" r="19%" fill="none" stroke="#7ABAFF" stroke-opacity="0.055" stroke-width="1"/>
+  <path d="M 4% 90% H 36%" stroke="#7ABAFF" stroke-opacity="0.26" stroke-width="2"/>
+  <path d="M 4% 90% v -14" stroke="#7ABAFF" stroke-opacity="0.26" stroke-width="2"/>
 
-    <rect width="1200" height="760" fill="url(#bg)"/>
-
-    <g opacity="0.14" stroke="#ffffff" fill="none">
-        <circle cx="990" cy="100" r="350"/>
-        <circle cx="1040" cy="680" r="300"/>
-        <path d="M0 0 L1200 760"/>
-        <path d="M1200 0 L0 760"/>
+  <g transform="translate(158 118)">
+    <g transform="translate(76 126)">
+      <rect x="0" y="70" width="188" height="138" rx="4" fill="#1470D3" fill-opacity="0.15" stroke="#7ABAFF" stroke-opacity="0.65" stroke-width="4"/>
+      <path d="M0 70 L94 16 L188 70 L94 122 Z" fill="#7ABAFF" fill-opacity="0.12" stroke="#7ABAFF" stroke-opacity="0.65" stroke-width="4"/>
+      <path d="M94 122 V208" stroke="#7ABAFF" stroke-opacity="0.65" stroke-width="4"/>
     </g>
-
-    <g transform="translate(600,390) scale(2.3)">
-        <rect x="-80" y="-10" width="160" height="90" rx="6" fill="#ffffff" fill-opacity="0.96"/>
-        <polygon points="-80,-10 -80,-55 -20,-55 -40,-10" fill="#8ECBFF"/>
-        <polygon points="80,-10 80,-55 20,-55 40,-10" fill="#8ECBFF"/>
-        <polygon points="0,-135 -22,-98 -8,-98 -8,-80 8,-80 8,-98 22,-98" fill="#ffffff" fill-opacity="0.96"/>
+    <g transform="translate(326 250) scale(.78)">
+      <rect x="0" y="70" width="188" height="138" rx="4" fill="#FFFFFF" fill-opacity="0.025" stroke="#EAF4FF" stroke-opacity="0.46" stroke-width="4"/>
+      <path d="M0 70 L94 16 L188 70 L94 122 Z" fill="#FFFFFF" fill-opacity="0.025" stroke="#EAF4FF" stroke-opacity="0.46" stroke-width="4"/>
+      <path d="M94 122 V208" stroke="#EAF4FF" stroke-opacity="0.46" stroke-width="4"/>
     </g>
+    <path d="M540 272 H810" stroke="#7ABAFF" stroke-width="13" stroke-linecap="round"/>
+    <path d="M768 230 L820 272 L768 314" fill="none" stroke="#7ABAFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M575 390 H790" stroke="#EAF4FF" stroke-opacity="0.30" stroke-width="3" stroke-dasharray="12 12"/>
+  </g>
+
 </svg>
