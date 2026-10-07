@@ -1,0 +1,32 @@
+<svg width="310" height="72" viewBox="0 0 310 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M8 55L33 13L58 55H47L33 31L19 55H8Z" fill="#1467C9"/>
+    <path d="M25 55L33 41L41 55H25Z" fill="#0B1F3A"/>
+    <path d="M17 39L33 12L49 39L42 39L33 24L24 39H17Z" fill="#2D8CFF"/>
+  </g>
+
+  <text x="72" y="31"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="22"
+        font-weight="700"
+        fill="#0B1F3A">
+    EDILNOVA
+  </text>
+
+  <text x="187" y="31"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="22"
+        font-weight="700"
+        fill="#1467C9">
+    FRIULI
+  </text>
+
+  <text x="73" y="48"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="8.5"
+        font-weight="600"
+        letter-spacing="1.25"
+        fill="#64748B">
+    RISTRUTTURAZIONI E SERVIZI EDILI
+  </text>
+</svg>
