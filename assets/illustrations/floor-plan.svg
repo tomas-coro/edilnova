@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 510" fill="none"><title>Pianta architettonica illustrativa</title>
+<defs><pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#1470d3" stroke-opacity=".06"/></pattern><pattern id="tile" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#b0c9de" stroke-width=".6"/></pattern></defs>
+<rect width="680" height="510" fill="#eff5f9"/><rect x="25" y="25" width="630" height="460" fill="url(#g)"/>
+<path d="M92 94H584V407H92Z" fill="white"/><path d="M105 108H350V276H105Z" fill="url(#tile)"/><path d="M365 108H571V229H365Z" fill="#e7f1f9"/>
+<g stroke="#143b5b" stroke-width="9"><path d="M92 258V94H584V407H405M322 407H92V329M357 94V163M357 225V287H92M357 287V407M357 238H584"/></g>
+<g stroke="#6b94b2" stroke-width="1.3"><path d="M95 259H164V328A69 69 0 0 1 95 259M357 163H420V226A63 63 0 0 1 357 163M405 407V324H322A83 83 0 0 0 405 407"/>
+<path d="M129 139H195V248H129ZM133 144H160V171H133ZM164 144H191V171H164ZM133 181H191M232 145H309V235H232Z"/>
+<circle cx="270" cy="190" r="26"/><path d="M255 153v-12h30v12M255 227v12h30v-12M233 175h-12v30h12M307 175h12v30h-12"/>
+<rect x="390" y="128" width="150" height="72" rx="6"/><rect x="397" y="135" width="136" height="58" rx="18"/><circle cx="510" cy="164" r="4"/>
+<path d="M391 269H546V372H391ZM391 299H546M431 269V372M491 269V372M140 323H308V374H140ZM150 323v51M184 323v51M218 323v51M252 323v51M286 323v51"/>
+<path d="M92 67H584M92 57v20M584 57v20M62 94V407M52 94h20M52 407h20" stroke="#7298b5"/>
+</g>
+<g stroke="#1470d3" stroke-width="3"><path d="M155 94H277M451 94H536M584 279V366M148 407H253"/></g>
+<g stroke="#eff5f9" stroke-width="5"><path d="M155 94H277M451 94H536M584 279V366M148 407H253"/></g>
+<g stroke="#1470d3" stroke-width="1.3"><path d="M155 91H277V97H155ZM451 91H536V97H451ZM581 279H587V366H581ZM148 404H253V410H148Z"/></g>
+<circle cx="611" cy="58" r="16" stroke="#1470d3" stroke-width="1"/><path d="m607 62 4-14 4 14-4-3Z" fill="#1470d3"/>
+<text x="92" y="453" fill="#54738c" font-family="monospace" font-size="10" letter-spacing="1.5">EDILNOVA / STUDIO 02</text><text x="584" y="453" text-anchor="end" fill="#54738c" font-family="monospace" font-size="10" letter-spacing="1.5">ILLUSTRAZIONE</text></svg>

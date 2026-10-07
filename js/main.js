@@ -28,18 +28,30 @@ const menuButton = document.querySelector(".menu-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 
 if (menuButton && mobileNav) {
-  menuButton.addEventListener("click", () => {
-    const open = mobileNav.classList.toggle("is-open");
-
+  const setMenuOpen = open => {
+    mobileNav.classList.toggle("is-open", open);
+    mobileNav.inert = !open;
     menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Chiudi menu" : "Apri menu");
+  };
+
+  menuButton.addEventListener("click", () => {
+    setMenuOpen(menuButton.getAttribute("aria-expanded") !== "true");
   });
 
   mobileNav.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-      mobileNav.classList.remove("is-open");
-      menuButton.setAttribute("aria-expanded", "false");
+      setMenuOpen(false);
     });
   });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
+      setMenuOpen(false);
+      menuButton.focus();
+    }
+  });
+  window.matchMedia("(max-width: 960px)").addEventListener("change", () => setMenuOpen(false));
 }
 
 

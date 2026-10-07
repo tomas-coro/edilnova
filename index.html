@@ -19,29 +19,25 @@
   <meta property="og:image" content="assets/logo/logo-main.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
 
+  <link rel="preload" href="assets/fonts/montserrat-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+<a class="skip-link" href="#top">Vai al contenuto</a>
 
 <header class="site-header">
 
   <div class="container header-inner">
 
     <a class="brand" href="#top">
-      <img src="assets/logo/logo-main.png" alt="EdilNova Friuli">
+      <img src="assets/logo/logo-main.png" alt="EdilNova Friuli" width="780" height="180">
     </a>
 
-    <nav class="desktop-nav">
+    <nav class="desktop-nav" aria-label="Navigazione principale">
       <a href="#servizi">Servizi</a>
       <a href="#zona">Dove operiamo</a>
       <a href="#contatti">Contatti</a>
@@ -51,7 +47,7 @@
       Richiedi un preventivo
     </a>
 
-    <button class="menu-toggle" aria-label="Apri menu">
+    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span>
       <span></span>
       <span></span>
@@ -59,7 +55,7 @@
 
   </div>
 
-  <nav class="mobile-nav">
+  <nav class="mobile-nav" id="mobile-menu" aria-label="Navigazione mobile" inert>
     <a href="#servizi">Servizi</a>
     <a href="#zona">Dove operiamo</a>
     <a href="#contatti">Contatti</a>
@@ -100,8 +96,8 @@ HERO
           Richiedi un preventivo
         </a>
 
-        <a href="tel:+39XXXXXXXXXX" class="button button-outline">
-          Chiamaci
+        <a href="#servizi" class="button button-outline">
+          Esplora i servizi <span aria-hidden="true">↗</span>
         </a>
 
       </div>
@@ -141,8 +137,8 @@ HERO
 
 
     <div class="hero-image">
-          <img src="assets/images/hero-placeholder.svg"
-               alt="Interno di abitazione in ristrutturazione">
+          <img src="assets/illustrations/architecture.svg"
+               alt="Studio architettonico illustrato: copertura e struttura in assonometria" width="720" height="700" fetchpriority="high">
         </div>
       </div>
 
@@ -177,10 +173,10 @@ INTRO
     </div>
 
 
-    <div class="intro-image reveal">
-          <img src="assets/images/intro-placeholder.svg"
-               alt="Interno residenziale">
-        </div>
+    <div class="intro-summary reveal">
+      <span class="intro-count" aria-hidden="true">07<span>/</span></span>
+      <p>Servizi edili.<br><strong>Un unico riferimento.</strong></p>
+    </div>
 
   </div>
 
@@ -214,7 +210,7 @@ SERVIZI
       <article class="service-card reveal">
 
         <div class="service-image">
-          <img src="assets/images/service-01.svg" alt="">
+          <img src="assets/illustrations/service-01.svg" alt="" width="88" height="88" loading="lazy">
         </div>
 
         <div class="service-body">
@@ -238,7 +234,7 @@ SERVIZI
       <article class="service-card reveal">
 
         <div class="service-image">
-          <img src="assets/images/service-02.svg" alt="">
+          <img src="assets/illustrations/service-02.svg" alt="" width="88" height="88" loading="lazy">
         </div>
 
         <div class="service-body">
@@ -263,7 +259,7 @@ SERVIZI
       <article class="service-card reveal">
 
         <div class="service-image">
-          <img src="assets/images/service-03.svg" alt="">
+          <img src="assets/illustrations/service-03.svg" alt="" width="88" height="88" loading="lazy">
         </div>
 
         <div class="service-body">
@@ -288,7 +284,7 @@ SERVIZI
       <article class="service-card reveal">
 
         <div class="service-image">
-          <img src="assets/images/service-04.svg" alt="">
+          <img src="assets/illustrations/service-04.svg" alt="" width="88" height="88" loading="lazy">
         </div>
 
         <div class="service-body">
@@ -313,7 +309,7 @@ SERVIZI
       <article class="service-card reveal">
 
         <div class="service-image">
-          <img src="assets/images/service-05.svg" alt="">
+          <img src="assets/illustrations/service-05.svg" alt="" width="88" height="88" loading="lazy">
         </div>
 
         <div class="service-body">
@@ -337,7 +333,7 @@ SERVIZI
       <article class="service-card reveal">
 
         <div class="service-image">
-          <img src="assets/images/service-06.svg" alt="">
+          <img src="assets/illustrations/service-06.svg" alt="" width="88" height="88" loading="lazy">
         </div>
 
         <div class="service-body">
@@ -361,7 +357,7 @@ SERVIZI
       <article class="service-card reveal">
 
         <div class="service-image">
-          <img src="assets/images/service-07.svg" alt="">
+          <img src="assets/illustrations/service-07.svg" alt="" width="88" height="88" loading="lazy">
         </div>
 
         <div class="service-body">
@@ -421,8 +417,8 @@ FOCUS
 
 
     <div class="focus-image reveal">
-          <img src="assets/images/focus-placeholder.svg"
-               alt="Bagno residenziale">
+          <img src="assets/illustrations/floor-plan.svg"
+               alt="Pianta architettonica illustrativa, non riferita a un progetto realizzato" width="680" height="510" loading="lazy">
         </div>
 
   </div>
@@ -438,10 +434,9 @@ SGOMBERI
 
   <div class="container clearout-grid">
 
-    <div class="clearout-image reveal">
-          <img src="assets/images/sgomberi-placeholder.svg"
-               alt="Ambiente domestico in ristrutturazione">
-        </div>
+    <div class="clearout-index reveal" aria-hidden="true">
+      <span>07</span><img src="assets/illustrations/service-07.svg" alt="" width="88" height="88" loading="lazy">
+    </div>
 
 
     <div class="clearout-copy reveal">
@@ -473,11 +468,6 @@ SGOMBERI
 <!-- =======================================================
 ZONA
 ======================================================= -->
-
-
-
-
-
 
 
 <section class="service-area-section" id="zona">
@@ -533,14 +523,13 @@ ZONA
     </div>
 
 
-    <div class="service-area-visual reveal">
+    <div class="service-area-visual reveal" aria-label="Raggio indicativo della zona operativa">
 
-      <img class="service-area-map" src="assets/images/coverage-map.svg"
-           alt="Mappa dell'area operativa EdilNova Friuli: Udine e Bassa Friulana">
+
 
       <div class="service-area-badge">
 
-        <span>Raggio operativo</span>
+        <span>Raggio indicativo</span>
 
         <strong>
           30-40
@@ -556,12 +545,6 @@ ZONA
   </div>
 
 </section>
-
-
-
-
-
-
 
 
 <!-- =======================================================
@@ -589,15 +572,15 @@ CONTATTI
 
       <div class="contact-list">
 
-        <a href="tel:+39XXXXXXXXXX">
+        <div class="contact-pending">
           <span>Telefono</span>
-          <strong>+39 XXX XXX XXXX</strong>
-        </a>
+          <strong>[DA CONFERMARE]</strong>
+        </div>
 
-        <a href="mailto:info@xxxxxxxx.it">
+        <div class="contact-pending">
           <span>Email</span>
-          <strong>info@xxxxxxxx.it</strong>
-        </a>
+          <strong>[DA CONFERMARE]</strong>
+        </div>
 
         <div>
           <span>Zona operativa</span>
@@ -609,14 +592,15 @@ CONTATTI
     </div>
 
 
-    <form class="contact-form">
+    <form class="contact-form" aria-describedby="form-note">
+      <p class="form-note" id="form-note">Modulo dimostrativo: invio non ancora attivo.</p>
 
       <div class="form-row">
 
         <label>
           Nome e cognome
           <input
-            type="text"
+            type="text" name="name" autocomplete="name"
             placeholder="Nome e cognome"
           >
         </label>
@@ -624,7 +608,7 @@ CONTATTI
         <label>
           Telefono
           <input
-            type="tel"
+            type="tel" name="phone" autocomplete="tel"
             placeholder="Il tuo numero"
           >
         </label>
@@ -637,7 +621,7 @@ CONTATTI
         <label>
           Email
           <input
-            type="email"
+            type="email" name="email" autocomplete="email"
             placeholder="La tua email"
           >
         </label>
@@ -646,7 +630,7 @@ CONTATTI
 
           Tipo di intervento
 
-          <select>
+          <select name="service">
 
             <option>
               Seleziona un servizio
@@ -692,7 +676,7 @@ CONTATTI
         Messaggio
 
         <textarea
-          rows="5"
+          rows="4" name="message"
           placeholder="Descrivi brevemente il lavoro..."
         ></textarea>
 
@@ -701,8 +685,8 @@ CONTATTI
 
       <button
         class="button button-primary form-submit"
-        type="submit">
-        Invia la richiesta
+        type="submit" disabled>
+        Invio da attivare
       </button>
 
     </form>
@@ -728,8 +712,8 @@ CONTATTI
 
     <div class="footer-col">
       <span class="footer-label">Contatti</span>
-      <a href="tel:+39XXXXXXXXXX">+39 XXX XXX XXXX</a>
-      <a href="mailto:info@xxxxxxxx.it">info@xxxxxxxx.it</a>
+      <div class="contact-pending">[DA CONFERMARE]</div>
+      <div class="contact-pending">[DA CONFERMARE]</div>
     </div>
 
     <div class="footer-col">
@@ -749,7 +733,7 @@ CONTATTI
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
       <span>&copy; <span id="footer-year">2026</span> EdilNova Friuli</span>
-      <span>P. IVA XXXXXXXXXXX</span>
+      <span>P. IVA [DA CONFERMARE]</span>
     </div>
   </div>
 
