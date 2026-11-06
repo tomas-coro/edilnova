@@ -72,25 +72,15 @@ h3 { font-size: 19px; line-height: 1.3; letter-spacing: -.025em; }
 .hero-image { min-width: 0; }
 .hero-image img { width: 100%; height: auto; }
 
-/* A quiet editorial introduction balances the illustrated hero. */
-.intro { padding-block: 76px; }
-.intro-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 110px; align-items: center; }
-.intro-content { max-width: 630px; }
-.intro-content p:not(.eyebrow) { margin-top: 22px; color: var(--muted); font-size: 15px; }
-.intro-summary { display: flex; gap: 24px; align-items: center; justify-content: flex-end; padding-left: 48px; border-left: 1px solid var(--border); }
-.intro-count { color: var(--navy); font-size: 94px; line-height: 1; font-weight: 500; letter-spacing: -.08em; }
-.intro-count span { color: #98c3ec; font-weight: 400; font-size: 62px; }
-.intro-summary p { color: var(--muted); font-size: 12px; line-height: 1.9; }
-.intro-summary strong { color: var(--navy); font-weight: 600; }
-
-/* Seven services: compact line drawings, consistent type and deliberate 4 + 3 grid. */
+/* Services: interni (4 cards), altri servizi edili (2 cards), extra (2 blocchi). */
 .services-section { background: var(--surface); }
 .section-heading { max-width: 720px; margin-bottom: 46px; }
 .services-grid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 18px; }
 .service-card { position: relative; grid-column: span 2; padding: 26px; background: white; border: 1px solid var(--border); border-radius: 3px; transition: border-color .2s, box-shadow .2s; }
-.service-card:nth-child(5) { grid-column: 2 / span 2; }
-.service-card:nth-child(6) { grid-column: 4 / span 2; }
-.service-card:nth-child(7) { grid-column: 6 / span 2; }
+.services-grid.services-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.services-grid-2 .service-card { grid-column: auto; }
+.services-secondary { background: white; }
+.services-secondary .service-card { background: var(--surface); }
 .service-card:hover { border-color: #87b8e5; box-shadow: 0 8px 22px #092d5010; }
 .service-image { margin-bottom: 25px; }
 .service-image img { width: 70px; height: 70px; }
@@ -100,20 +90,21 @@ h3 { font-size: 19px; line-height: 1.3; letter-spacing: -.025em; }
 .service-card p { margin-top: 13px; color: var(--muted); font-size: 13px; line-height: 1.75; }
 
 /* Architectural plan: illustrative, not a claimed client project. */
-.focus-section { background: var(--navy); padding-block: 86px; }
+.focus-section { background: var(--navy-2); border-top: 1px solid #24425c; padding-block: 86px; }
 .focus-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 90px; align-items: center; }
 .focus-copy h2 { color: white; }
 .focus-copy p:not(.eyebrow) { color: #b7cbdd; margin-top: 24px; font-size: 15px; }
 .focus-copy .button { margin-top: 30px; }
 .focus-image { border: 8px solid #24425c; border-radius: 2px; }
 .focus-image img { width: 100%; height: auto; }
-.clearout-grid { display: grid; grid-template-columns: .65fr 1.35fr; gap: 88px; align-items: center; }
-.clearout-index { min-height: 240px; display: flex; align-items: center; justify-content: center; gap: 32px; border: 1px solid var(--border); background: var(--surface); }
-.clearout-index > span { color: #adc7dc; font-weight: 500; font-size: 88px; letter-spacing: -.08em; }
-.clearout-index img { width: 84px; height: 84px; }
-.clearout-copy { max-width: 670px; }
-.clearout-copy p:not(.eyebrow) { color: var(--muted); margin-top: 20px; font-size: 15px; }
-.clearout-copy .button { margin-top: 24px; }
+
+.extra-section { background: var(--blue-light); padding-block: 96px; border-block: 1px solid var(--border); }
+.extra-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.extra-card { display: flex; gap: 28px; align-items: center; padding: 44px; background: white; border: 1px solid var(--border); border-top: 4px solid var(--blue); border-radius: 3px; }
+.extra-card img { flex: 0 0 110px; width: 110px; height: 110px; }
+.extra-card h3 { font-size: 26px; }
+.extra-card p { margin-top: 12px; color: var(--muted); font-size: 15px; }
+.extra-card .button { margin-top: 22px; }
 
 /* Coverage is informational typography, never a fabricated geographical map. */
 .service-area-section { background: #edf4fa; padding-block: 80px; border-block: 1px solid var(--border); }
